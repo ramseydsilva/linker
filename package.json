@@ -1,0 +1,23 @@
+{
+  "name": "linker",
+  "version": "0.0.0",
+  "description": "Gather specific links from a website",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ramseydsilva/linker"
+  },
+  "keywords": [
+    "link",
+    "request"
+  ],
+  "author": "Ramsey D'silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramseydsilva/linker/issues"
+  },
+  "homepage": "https://github.com/ramseydsilva/linker"
+}
