@@ -1,7 +1,7 @@
 {
-  "name": "linker",
+  "name": "socialfinder",
   "version": "0.0.0",
-  "description": "Gather specific links from a website",
+  "description": "Gather social links from a website",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha test"
