@@ -2,7 +2,7 @@
   "name": "linker",
   "version": "0.0.0",
   "description": "Gather specific links from a website",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha test"
   },
@@ -19,5 +19,22 @@
   "bugs": {
     "url": "https://github.com/ramseydsilva/linker/issues"
   },
-  "homepage": "https://github.com/ramseydsilva/linker"
+  "homepage": "https://github.com/ramseydsilva/linker",
+  "dependencies": {
+    "request": "^2.34.0",
+    "jsdom": "^0.10.5",
+    "jquery": "^2.1.0",
+    "xtend": "^2.2.0",
+    "underscore": "^1.6.0",
+    "async": "^0.7.0",
+    "bluebird": "^1.2.2"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-uglify": "^0.4.0"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "crawl": "lib/index.js"
+  }
 }
