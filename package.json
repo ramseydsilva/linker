@@ -35,6 +35,7 @@
   },
   "preferGlobal": "true",
   "bin": {
-    "crawl": "lib/index.js"
+    "crawl": "bin/crawl.js",
+    "crawl": "bin/crawlMenu.js"
   }
 }
