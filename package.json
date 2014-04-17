@@ -1,6 +1,6 @@
 {
   "name": "socialfinder",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Gather social links from a website",
   "main": "lib/index.js",
   "scripts": {
