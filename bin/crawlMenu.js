@@ -7,9 +7,9 @@ var Linker = require('../lib'),
 
 if (process.argv.length > 2) {
     var l = new Linker({
-        maxDepth: 1
+        maxDepth: 1,
+        processor: new MenuProcessor()
     });
-    l.processor = new MenuProcessor();
 
     var userArgs = process.argv.slice(2);
 
