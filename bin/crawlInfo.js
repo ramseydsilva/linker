@@ -8,6 +8,8 @@ var Linker = require('../lib'),
 if (process.argv.length > 2) {
     var userArgs = process.argv.slice(2);
     var l = new Linker({
+        maxDepth: 5,
+        maxLinks: 100,
         processor: new InfoProcessor()
     });
 
