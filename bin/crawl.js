@@ -2,10 +2,12 @@
 
 'use strict';
 
-var Linker = require('../lib');
+var Linker = require('../lib'),
+    SocialProcessor = require('../lib/processors/social');
 
 if (process.argv.length > 2) {
     var l = new Linker();
+    l.processor = new SocialProcessor();
     var userArgs = process.argv.slice(2);
 
     l.crawl(userArgs[0])

@@ -2,16 +2,13 @@
 
 'use strict';
 
-var Linker = require('../lib');
+var Linker = require('../lib'),
+    InfoProcessor = require('../lib/processors/info');
 
 if (process.argv.length > 2) {
     var userArgs = process.argv.slice(2);
-    var l = new Linker({
-        getLinks: false,
-        getInfo: true,
-        maxDepth: 3,
-        infoWords: [userArgs[1]]
-    });
+    var l = new Linker();
+    l.processor = new InfoProcessor();
 
     l.crawl(userArgs[0])
     .progressed(function(res) {
@@ -19,7 +16,7 @@ if (process.argv.length > 2) {
     })
     .finally(function(res) {
         //console.log('Results', JSON.stringify(l.menu, undefined, 2));
-        console.log('Results count', l.menu.length);
+        console.log('Results count', l.results.length);
     });
 
 } else {
