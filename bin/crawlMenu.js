@@ -7,7 +7,7 @@ var Linker = require('../lib'),
 
 if (process.argv.length > 2) {
     var l = new Linker({
-        maxDepth: 1,
+        maxDepth: 3,
         processor: new MenuProcessor()
     });
 
