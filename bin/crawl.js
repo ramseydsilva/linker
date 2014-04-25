@@ -16,6 +16,7 @@ if (process.argv.length > 2) {
         console.log('Progress: ', JSON.stringify(res, undefined, 2));
     })
     .finally(function(res) {
+        console.log(l.links);
         console.log('Results', JSON.stringify(l.results, undefined, 2));
     });
 
